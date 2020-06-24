@@ -1,0 +1,11 @@
+import requests
+
+response = requests.get('https://api.hearthstonejson.com/v1/51510/enUS/cards.collectible.json')
+
+if response:
+    print("Success!")
+json_response = response.json()
+taunt = json_response[1]
+print(f'Card Name: {taunt["name"]}')
+print(len(response.json()))
+for ''
